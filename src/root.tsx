@@ -1,4 +1,4 @@
-
+import { Example } from "./components/example/example";
 
 export default () => {
   return (
@@ -9,7 +9,7 @@ export default () => {
       </head>
       <body>
         <main>
-          <Here />
+          <Example />
         </main>
       </body>
     </>

@@ -1,6 +1,6 @@
 # template-qwik-package
 
-Opinionated Qwik template for new component packages.
+Opinionated [Qwik](https://qwik.dev/) template for new component packages.
 
 ## Development
 

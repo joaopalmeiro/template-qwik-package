@@ -1,0 +1,55 @@
+{
+  "name": "template-qwik-package",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Opinionated Qwik template for new component packages.",
+  "license": "MIT",
+  "author": "João Palmeiro",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./lib/index.qwik.mjs",
+      "require": "./lib/index.qwik.cjs",
+      "types": "./lib-types/index.d.ts"
+    }
+  },
+  "main": "./lib/index.qwik.mjs",
+  "types": "./lib-types/index.d.ts",
+  "files": [
+    "lib",
+    "lib-types"
+  ],
+  "scripts": {
+    "build.lib": "vite build --mode lib",
+    "build.types": "tsc --emitDeclarationOnly",
+    "build": "qwik build",
+    "clean": "rimraf lib/ lib-types/ tsconfig.tsbuildinfo --verbose",
+    "dev": "vite --mode ssr",
+    "format.code": "biome check --apply .",
+    "format.pkgJson": "sort-package-json",
+    "format": "run-s format.pkgJson format.code",
+    "lint.code": "biome lint .",
+    "lint.engines": "check-engine",
+    "lint.pkgJson": "sort-package-json --check",
+    "lint": "run-s lint.engines lint.pkgJson lint.code"
+  },
+  "peerDependencies": {
+    "@builder.io/qwik": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "qwik": "./lib/index.qwik.mjs",
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "@builder.io/qwik": "1.4.5",
+    "check-engine": "1.12.0",
+    "npm-run-all2": "6.1.2",
+    "rimraf": "5.0.5",
+    "sort-package-json": "2.7.0",
+    "type-fest": "4.10.2",
+    "typescript": "5.3.3",
+    "vite": "5.1.3",
+    "vite-tsconfig-paths": "4.3.1"
+  }
+}

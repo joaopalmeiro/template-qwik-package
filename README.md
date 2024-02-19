@@ -24,9 +24,8 @@ npx degit github:joaopalmeiro/template-qwik-package --force
 7. Run the first two commands in the [`Development` section](#development) to install [Node.js](https://nodejs.org/en) and the development dependencies.
 8. Open the [NOTES.md](NOTES.md) file and install the project-specific dependencies according to the first command in the [Commands section](NOTES.md#commands).
 9. Change `GitHub` in the [`Deployment` section](#deployment) to `GitLab` or `Codeberg` (if necessary) and update the link to the corresponding Tags page.
-10. Update the link to the npm package in the [`Deployment` section](#deployment).
-11. Delete the [`Template References` section](NOTES.md#template-references) from the [NOTES.md](NOTES.md) file.
-12. Delete the [`Getting Started` section](#getting-started).
+10. Delete the [`Template References` section](NOTES.md#template-references) from the [NOTES.md](NOTES.md) file.
+11. Delete the [`Getting Started` section](#getting-started).
 
 ## Development
 
